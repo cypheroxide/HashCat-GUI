@@ -1,0 +1,13 @@
+[Unit]
+Description=HashCat GUI Service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hashcat-gui
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
+

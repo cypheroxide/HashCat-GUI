@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hashcat-gui"
+version = "0.1.0"
+description = "A modern GUI interface for HashCat password cracker"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: GTK",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Security",
+    "Topic :: System :: Systems Administration",
+]
+
+dependencies = [
+    "flask>=2.0.0",
+    "websockets>=10.0",
+    "PyGObject>=3.40.0",
+    "aiohttp>=3.8.0",
+    "python-xlib>=0.31",
+    "toml>=0.10.2",
+    "psutil>=5.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cypheroxide/HashCat-GUI"
+Repository = "https://github.com/cypheroxide/HashCat-GUI.git"
+Issues = "https://github.com/cypheroxide/HashCat-GUI/issues"
+
+[project.scripts]
+hashcat-gui = "hashcat_gui.main:main"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["hashcat_gui"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]

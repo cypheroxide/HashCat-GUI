@@ -1,0 +1,14 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include requirements.txt
+include hashcatgui/data/hash_types.txt
+include hashcatgui/gui/styles.css
+include hashcatgui/gui/images/*
+include hashcatgui/gui/index.html
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[cod]
+

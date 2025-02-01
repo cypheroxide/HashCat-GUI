@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=HashCat GUI
+Comment=A GUI interface for HashCat password cracker
+Exec=hashcat-gui
+Icon=hashcat-gui
+Terminal=false
+Type=Application
+Categories=System;Security;
+Keywords=hashcat;password;cracking;security
+
