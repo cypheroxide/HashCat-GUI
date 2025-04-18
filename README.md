@@ -85,3 +85,5 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the project.
 
 For security-related matters, please review our [Security Policy](SECURITY.md).
+
+### NOTE: This is a Work in Progress and is not ready for use. Contributions, discussions, and more are welcomed!
