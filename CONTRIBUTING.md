@@ -1,10 +1,10 @@
-# Contributing to HashBreaker
+# Contributing to HashCat-GUI
 
 First off, thank you for considering contributing to HashCat GUI! It's people like you who make HashCat GUI such a great tool.
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [project@email.com].
+This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [cypheroxide@cyberservices.com].
 
 ## Development Setup
 
@@ -17,8 +17,8 @@ This project and everyone participating in it is governed by our [Code of Conduc
 ### Setting up your development environment
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/h.git
-cd hashbreaker
+git clone https://github.com/cypheroxide/HashCat-GUI.git
+cd HashCat-GUI
 
 # Create a virtual environment
 python -m venv venv
@@ -104,7 +104,7 @@ Brief description of changes
 
 ### Bug Reports
 Please include:
-- HashBreaker version
+- HashCat-GUI version
 - Operating system and version
 - Steps to reproduce
 - Expected vs actual behavior
@@ -131,7 +131,7 @@ Please include:
 pytest
 
 # Run with coverage
-pytest --cov=hashbreaker tests/
+pytest --cov=HashCat-GUI tests/
 
 # Run specific test file
 pytest tests/test_specific.py
